@@ -1,17 +1,54 @@
-# Employee Payroll System
+# Employee Payroll Management System
 
-A simple Employee Payroll Management System built using Python and MySQL.
+An Employee Payroll Management System built using **Python** and **MySQL** that stores employee data, calculates net salaries, and displays payroll information from a relational database.
 
-## Features
-- Store employee details in MySQL
-- Calculate net salary
-- Display payroll information
+This project demonstrates backend development fundamentals including database design, Python–SQL integration, and basic business logic implementation.
 
-## Tech Stack
-- Python
-- MySQL
+---
 
-## How to Run
-1. Create database using `schema.sql`
-2. Update DB credentials in `main.py`
-3. Run: python main.py
+##  Features
+
+- Store employee details in a MySQL database
+- Retrieve employee records using SQL queries
+- Calculate net salary using:
+
+- Display payroll details in a clean, readable format
+- Designed to be easily extendable (reports, exports, CLI menu)
+
+---
+
+##  Tech Stack
+
+- **Programming Language:** Python 3.11
+- **Database:** MySQL
+- **Tools:** VS Code, Git, GitHub
+- **Libraries:** mysql-connector-python
+
+---
+
+##  Project Structure
+
+
+---
+
+##  Database Schema
+
+**Table: employees**
+
+| Column        | Type          | Description                  |
+|--------------|--------------|------------------------------|
+| emp_id       | INT (PK)      | Employee ID (Auto Increment) |
+| name         | VARCHAR(100)  | Employee name                |
+| department   | VARCHAR(50)   | Department name              |
+| base_salary  | DECIMAL(10,2) | Base salary                  |
+| bonus        | DECIMAL(10,2) | Bonus amount                 |
+| deductions   | DECIMAL(10,2) | Salary deductions            |
+
+---
+
+##  How to Run the Project
+
+### 1️ Clone the Repository
+```bash
+git clone https://github.com/yogitahub/employee-payroll-system.git
+cd employee-payroll-system
